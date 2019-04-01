@@ -43,9 +43,12 @@ header{
 }
 
 .main{
+	padding: 0 2rem;
+	@include col-ct;
 	.m-bar{
 		@include row-bt;
-		padding:  2rem;
+		padding: 2rem 0;
+		width: 100%;
 		.m-bar-content{
 			@include row-bt;
 			h2{
@@ -55,7 +58,8 @@ header{
 			hr{
 			    height: 49px;
 			    border-left: none;
-			    border-color:#d9d9d9;
+			    border-color:$gray2;
+			    border-top: none;
 			    margin: 0 1.5rem;
 			}
 			ul{
@@ -69,5 +73,11 @@ header{
 				}
 			}
 		}
+	}
+	.gray-line{
+	    width: 100%;
+	    border-color: $gray2;
+	    border-top: none;
+	    border-left: none;
 	}
 }

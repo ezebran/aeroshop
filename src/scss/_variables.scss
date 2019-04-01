@@ -118,6 +118,7 @@ p{
 $cele: #0ad4fa;
 $black: #616161;
 $gray: #a3a3a3;
+$gray2: #d9d9d9;
 $white-bg: #f9f9f9;
 $gray-bg: #ededed;
 $white: #ffffff;
@@ -133,5 +134,18 @@ $white: #ffffff;
 	&.btn-active{
 		background: $cele;
 		color:$white;
+	}
+}
+
+.arrow-icon{
+	border:1px solid $gray2;
+	color:$gray2;
+	border-radius: 100%;
+	font-size: 1.6rem;
+	padding: 0.5rem;
+	transition:all .2s ease-out;
+	&:hover{
+		color:$cele;
+		border-color:$cele;
 	}
 }
