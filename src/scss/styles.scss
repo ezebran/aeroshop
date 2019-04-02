@@ -3,6 +3,7 @@
 body{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size:16px;
+	background: $white-bg;
 }
 
 header{
@@ -81,3 +82,90 @@ header{
 	    border-left: none;
 	}
 }
+
+.articles{
+	@include row-bt;
+	width: 100%;
+	padding: 3rem;
+	article{
+		width: 275px;
+		height: 275px;
+		position:relative;
+		margin: 1rem 0;
+		padding: 1rem;
+	    background: #ffffff;
+		box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
+		display: flex;
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-o-flex;
+		flex-flow:wrap column;
+		justify-content: space-between;
+	    align-items: flex-start;
+	    transition:all .3s ease-out;
+	    &:hover{
+	    	box-shadow: 8px 8px 14px 0 rgba(0,0,0,0.3);
+		    transform: translateY(-20px);
+	    }
+	    &:hover>.info-hover{
+	    	opacity: 1;
+	    }
+		.buy-icon{
+			position: absolute;
+			top: 12px;
+    		right: 12px;
+		}
+		.buy-icon-hover{
+			position: absolute;
+			top: 10px;
+    		right: 5px;
+		}
+		img{
+			width: 100%;
+		}
+		h5{
+			color:$gray;
+			font-weight: 400;
+		}
+		h4{
+			color:$black;
+			font-weight: 400;
+		}
+		.info-hover{
+		    position: absolute;
+		    @include col-ct;
+		    height: 100%;
+		    width: 100%;
+		    top: 0;
+		    left: 0;
+		    background-image: linear-gradient(-180deg, rgba(10, 212, 250, 0.8) 0%, rgba(37, 187, 241, 0.8) 100%);
+		    opacity: 0;
+		    transition:all .3s ease-out;
+		    .price{
+		    	@include row-ct;
+		    	margin-bottom: 0.5rem;
+		    	img{
+		    		width: 34px;
+		    		margin-left: 0.4rem;
+		    	}
+		    	h3{
+		    		color:$white;
+		    		font-weight: 400;
+		    	}
+		    }
+	    	.redeem{
+				font-size: 1.25rem;
+			    background: $white;
+			    color: $black;
+			    padding: 0.5rem 3rem;
+			    border-radius: 20px;
+	    	}
+		}
+	}
+}
+
+.gl-foot{
+	margin-bottom: 4rem;
+}
+
+@import "./responsive";
