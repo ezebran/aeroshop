@@ -39,20 +39,18 @@
 			}
 		}
 	}
-}
+	.arrow-cont{
+		display: none;
+		.arrow-icon{
 
+		}	
+	}
 
-.arrow-cont{
-	display: none;
-	.arrow-icon{
-
-	}	
-}
-
-.arrow-resp{
-	display: inline-block;
-	span{
-		color:$cele;
-		border-color:$cele;
+	.arrow-resp{
+		display: inline-block;
+		span{
+			color:$cele;
+			border-color:$cele;
+		}
 	}
 }

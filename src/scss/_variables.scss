@@ -133,9 +133,19 @@ $white: #ffffff;
 	padding: 0.5rem 1rem;
 	border-radius: 100px;
 	color:$gray;
+	transition:all .2s ease-out;
 	&.btn-active{
 		background: $cele;
 		color:$white;
+		&:hover{
+			background: #5dd9f1;
+		}
+	}
+	&.btn-light{
+		&:hover{
+			background: #f3f3f3;
+			color: #656565;
+		}
 	}
 }
 
