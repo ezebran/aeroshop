@@ -20,7 +20,7 @@ header{
 		box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
 		.user-nav{
 			@include row-bt;
-			width: 14rem;
+			width: 19rem;
 			h2{
 				font-weight: 400;
 				color:$black;
@@ -30,6 +30,14 @@ header{
 					font-weight:400;
 					color:$black;
 				}
+			}
+			.buy-tooltip{
+				position: relative;
+				.carrito-btn{
+					img{
+						width: 3em;
+					}
+				}				
 			}
 		}
 	}
