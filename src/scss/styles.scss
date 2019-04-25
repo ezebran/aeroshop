@@ -37,6 +37,38 @@ header{
 					img{
 						width: 3em;
 					}
+				}
+				.carrito-tooltip{
+					position: absolute;
+				    left: -11em;
+				    @include col-ct;
+				    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
+				    background: #fff;
+				    padding: 1em;
+				    transition: all .3s ease-out;
+				    width: 25em;
+				    p{
+				    	color:$black;
+				    }
+				    .product-buy{
+				    	@include row-ar;
+				    	width: 100%;
+						h5{
+							color:$gray;
+							font-weight: 400;
+						}
+						h4{
+							color:$black;
+							font-weight: 400;
+						}
+						.pb-image{
+						    width: 10em;
+						}
+						.pb-price{
+							font-size: 1rem;
+							@include row-ct;
+						}
+				    }
 				}				
 			}
 		}
