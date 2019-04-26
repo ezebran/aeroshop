@@ -41,11 +41,13 @@ header{
 				.carrito-tooltip{
 					position: absolute;
 				    left: -11em;
-				    @include col-ct;
+				    // @include col-ct;
 				    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);
 				    background: #fff;
 				    padding: 1em;
 				    transition: all .3s ease-out;
+				    height: 24em;
+    				overflow: auto;
 				    width: 25em;
 				    p{
 				    	color:$black;
@@ -53,6 +55,7 @@ header{
 				    .product-buy{
 				    	@include row-ar;
 				    	width: 100%;
+				        margin: 1em 0;
 						h5{
 							color:$gray;
 							font-weight: 400;
