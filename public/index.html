@@ -9,15 +9,40 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
+
+	<div class="modal" id="modal">
+		<form>
+			<a href="#" class="m-close"><span class="icon-cross"></span></a>
+			<h4 class="m-title">Do you want to redeem this product?</h4>
+			<div class="m-product">
+				<picture>
+					<source srcset="assets/images/product-pics/AcerAspire-x2.png" media="(min-width: 600px)">
+					<img src="assets/images/product-pics/AcerAspire-x1.png">
+				</picture>
+				<div class="m-info-product">
+					<h5>Phones</h5>
+					<h4 class="m-p-name">iPhone 8</h4>
+					<div class="m-calc">
+						<h4>2000 <span> Your current points.</span></h4>
+						<h4>- 630 <span> Price of the product.</span></h4>
+						<hr class="m-gray-line" />
+						<h4>1370 <span> Points after the exchange.</span></h4>
+					</div>
+				</div>
+			</div>
+			<input type="submit" value="Redeem now!" class="btn btn-active">
+		</form>
+	</div>
+
 	<header>
 		<nav>
 			<img src="assets/images/aerolab-logo.svg">
 			<div class="user-nav">
 				<div class="buy-tooltip">
-					<a href="#" class="carrito-btn">
+					<a href="#" class="carrito-btn" id="carrito-btn">
 						<img src="assets/images/icons/buy-gray.svg">
 					</a>
-					<div class="carrito-tooltip">
+					<div class="carrito-tooltip" id="carrito-tooltip">
 						<!-- <p>Your redeem history is empty.</p> -->
 						<div class="product-buy">
 							<img src="assets/images/product-pics/AcerAspire-x1.png" class="pb-image">
@@ -104,7 +129,6 @@
 
 		<hr class="gray-line">
 	<section class="main">
-
 		<div class="articles">
 
 			<a href="#">
