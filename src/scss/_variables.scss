@@ -137,6 +137,7 @@ $white: #ffffff;
 	transition:all .2s ease-out;
     border: none;
     cursor: pointer;
+    outline:none;
 	&.btn-active{
 		background: $cele;
 		color:$white;
@@ -153,8 +154,8 @@ $white: #ffffff;
 }
 
 .arrow-icon{
-	border:1px solid $gray2;
-	color:$gray2;
+	border:1px solid $gray;
+	color:$gray;
 	border-radius: 100%;
 	font-size: 1.6rem;
 	padding: 0.5rem;

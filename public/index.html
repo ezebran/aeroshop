@@ -10,11 +10,10 @@
 </head>
 <body>
 
-<div class="modal" id="modal">
+<!-- <div class="modal" id="modal">
 	<form>
 		<a href="#" class="m-close"><span class="icon-cross"></span></a>
 		<h4 class="m-title">list of products redeemed</h4>
-			<!-- <div class="m-products-list"> -->
 				<div class="m-product bor-bot">
 					<picture>
 						<source srcset="assets/images/product-pics/AcerAspire-x2.png" media="(min-width: 600px)">
@@ -78,14 +77,12 @@
 
 					</div>
 				</div>
-			<!-- </div> -->
-			<!-- <input type="submit" value="Redeem now!" class="btn btn-active"> -->
 	</form>
-</div>
+</div> -->
 
 
 
-<!-- 	<div class="modal" id="modal" style="display:none">
+	<div class="modal" id="modal" >
 		<form>
 			<a href="#" class="m-close"><span class="icon-cross"></span></a>
 			<h4 class="m-title">Do you want to redeem this product?</h4>
@@ -105,63 +102,23 @@
 					</div>
 				</div>
 			</div>
-			<input type="submit" value="Redeem now!" class="btn btn-active">
+			<input type="submit" value="Redeem now!" class="btn btn-active m-auto">
 		</form>
-	</div> -->
+	</div>
 
 	<header>
 		<nav>
 			<img src="assets/images/aerolab-logo.svg">
 			<div class="user-nav">
-				<div class="buy-tooltip">
 					<a href="#" class="carrito-btn" id="carrito-btn">
 						<img src="assets/images/icons/buy-gray.svg">
 					</a>
-					<div class="carrito-tooltip" id="carrito-tooltip">
-						<!-- <p>Your redeem history is empty.</p> -->
-						<div class="product-buy">
-							<img src="assets/images/product-pics/AcerAspire-x1.png" class="pb-image">
-							<div class="produ-buy-info">
-								<div class="pb-price">
-									<h5>12.000</h5>
-									<img src="assets/images/icons/coin.svg">
-								</div>
-								<h5>Phones</h5>
-								<h4>iPhone 8</h4>
-							</div>
-						</div>
-						<hr class="gray-line">
-						<div class="product-buy">
-							<img src="assets/images/product-pics/AcerAspire-x1.png" class="pb-image">
-							<div class="produ-buy-info">
-								<div class="pb-price">
-									<h5>12.000</h5>
-									<img src="assets/images/icons/coin.svg">
-								</div>
-								<h5>Phones</h5>
-								<h4>iPhone 8</h4>
-							</div>
-						</div>
-						<hr class="gray-line">
-						<div class="product-buy">
-							<img src="assets/images/product-pics/AcerAspire-x1.png" class="pb-image">
-							<div class="produ-buy-info">
-								<div class="pb-price">
-									<h5>12.000</h5>
-									<img src="assets/images/icons/coin.svg">
-								</div>
-								<h5>Phones</h5>
-								<h4>iPhone 8</h4>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<h2>John Kite</h2>
+
+				<h2 class="user-name">John Kite</h2>
 				<div class="btn btn-light">
 					<h2>6000</h2>
 					<img src="assets/images/icons/coin.svg">
-				</div>
 			</div>
 		</nav>
 		<div class="h-banner">
@@ -182,8 +139,13 @@
 
 				<ul>
 					<li class="p-sort">Sort by:</li>
-
-					<a href="#">
+					
+					<select name="sort" id="sort">
+						<option value="reciente" id="reciente">Most recent</option>
+						<option value="porMenor" id="porMenor">Lowest price</option>
+						<option value="porMayor" id="porMayor">Highest price</option>
+					</select>
+<!-- 					<a href="#">
 						<li class="btn btn-active">Most recent</li>
 					</a>
 
@@ -193,7 +155,7 @@
 
 					<a href="#">
 						<li class="btn btn-light">Highest price</li>
-					</a>
+					</a> -->
 				</ul>
 
 			</div>

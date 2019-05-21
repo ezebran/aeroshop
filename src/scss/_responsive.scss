@@ -8,27 +8,39 @@
 			    background-position: 60%;
 			    background-attachment: inherit;
 			}
-		}
-		.main{
-			.m-bar{
-				@include col-ct;
-				.m-bar-content{
-					width: 100%;
-					.n-products{
-						width: 100%;
-						@include row-bt;
-					}
-					@include col-ct;
-					hr{
+			nav{
+				.user-nav{
+				    width: 50%;
+					.user-name{
 						display: none;
 					}
-					ul{
-						@include col-ct;
-						li{
-							margin: 0.5rem 0;
-						}
+				}
+			}
+		}
+		.m-bar{
+			@include col-ct;
+			.m-bar-content{
+				width: 100%;
+				.n-products{
+					width: 100%;
+					@include row-ct;
+					a{
+						margin:0 0.5em;
 					}
 				}
+				@include col-ct;
+				hr{
+					display: none;
+				}
+				ul{
+					margin-top: 1em;
+					li{
+						margin:0 0.5em;
+					}
+				}
+			}
+		.main{
+
 			}
 			.articles{
 				padding: 3rem 0;
@@ -52,5 +64,39 @@
 			color:$cele;
 			border-color:$cele;
 		}
+		.modal{
+			form{
+				@include col-ct;
+				.m-product{
+					picture{
+						width: 100%;
+						img{
+							width: 100%;
+						}
+					}
+					img{
+						width: 100% !important;
+					}
+					.m-info-product{
+						h5,.m-p-name{
+							text-align:center;
+						}
+					}
+				}
+			}
+		}
 	}
+}
+
+@media screen and (max-width: 926px) and (min-width: 415px){ //PARA TABLET
+	header{
+		.h-banner{
+			background-size: cover;
+    		background-position-x: 90%;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 150px){ //PARA TABLET
+
 }
