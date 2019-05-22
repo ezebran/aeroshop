@@ -64,22 +64,40 @@
 			color:$cele;
 			border-color:$cele;
 		}
-		.modal{
-			form{
-				@include col-ct;
-				.m-product{
-					picture{
-						width: 100%;
-						img{
-							width: 100%;
-						}
-					}
+	}
+	.modal{
+		form{
+			@include col-ct;
+		    max-height: initial;
+		    height: 100%;
+		    padding: 4em 0;
+		    width: 100%;
+			.m-product{
+				@include col-ct();
+				picture{
+					width: 100%;
 					img{
-						width: 100% !important;
+						width: 100%;
 					}
-					.m-info-product{
-						h5,.m-p-name{
-							text-align:center;
+				}
+
+				.m-info-product{
+					h5,.m-p-name{
+						text-align:center;
+					}
+				}
+			}
+		}
+	}
+	#purchaseModal{
+		form{
+			display: initial;
+			.m-product{
+				.m-info-product{
+					width: 100%;
+					.pb-price{
+						img{
+							width: 1.5em;
 						}
 					}
 				}
