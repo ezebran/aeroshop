@@ -6,16 +6,17 @@
 ## 2º Paso:
   instalar **NPM**, con instalar **nodeJS** se instala solo **NPM** y correr el siguiente comando en un **CMD** o **GitBash** estando parados sobre la raiz del proyecto.
   
-  ```npm install -D```
+  ```npm init -y```
   
-  Con esto instalaremos las dependencias de desarrollo indicadas en el *package.json*, en la version que necesitamos.
+  Con esto se crea el package para iniciar.
   
 ## 3º Paso:
-  Una vez finalizado el proceso de descarga, ejecutamos la siguiente linea de comando
+  copiamos la siguiente linea y la corremos en terminal
   
-  ```gulp```
+  ```npm i babel@6.23.0 browser-sync@2.24.4 gulp@3.9.1 gulp-autoprefixer@4.1.0 gulp-sass@3.1.0 -D```
   
-  Si, esa palabra sola, sin npm antes ni nada. y ya deberia funcionar.
+  y al final correr el proyecto con.
+  ``` gulp ```
 
 
 Landing vacio con las cosas basicas para arrancar un proyecto.
